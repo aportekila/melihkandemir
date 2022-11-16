@@ -1,19 +1,17 @@
-<h3 id="carnegie-mellon-university">Carnegie Mellon University</h3>
+{% if include.lecture.link %}
+    <h3> {{ include.lecture.title }}</h3>
+{% else %}
+    <h3> <a href="{{ include.lecture.link }}" target="_blank" rel="noopener noreferrer">{{ include.lecture.title }}</a></h3>
+{% endif %}
 <div class="card mt-3">
     <div class="p-3">
       <div class="row">
         <div class="col-sm-10">
-          <h5 class="card-title"><a href="https://www.cs.cmu.edu/~epxing/Class/10708-20/index.html" target="_blank" rel="noopener noreferrer">Probabilistic Graphical Models</a></h5>
-          <h6 class="card-subtitle font-italic">Spring 2020: Guest Lecturer</h6>
-        </div>
-        <div class="col-sm-2 text-sm-right">
-          <span class="badge">
-            10-708
-          </span>
+          <h5 class="card-title"> {{include.lecture.term }} {{include.lecture.year }}: {{include.lecture.type }}</h5>
         </div>
       </div>
       
-      <ul class="card-text font-weight-light list-group list-group-flush">
+      <ul class="card-text font-weight list-group list-group-flush">
         
         <li class="list-group-item">
           <div class="row">
