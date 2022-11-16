@@ -14,12 +14,11 @@
     
     {% if include.lecture.schedule %}
         <ul class="card-text font-weight list-group list-group-flush">
-        {% assign sorted = site.data.teaching.lectures | sort: "year" | reverse %}
+        {% assign sorted = include.lecture.schedule | sort: "week" %}
         {% for item in sorted %}
           <li class="list-group">
             <div class="row">
               <div class="col-sm-9">
-                {{item}}
                 Week {{ item.week }}: {{ item.topic }}
               </div>
               <div class="col-sm-3">
