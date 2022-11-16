@@ -18,10 +18,10 @@
         {% for item in sorted %}
           <li class="list-group">
             <div class="row">
-              <div class="col-sm-5">
+              <div class="col-sm-6">
                 Week {{ item.week }}: {{ item.topic }}
               </div>
-                <div class="col-sm-2">
+                <div class="col-sm-1.5">
                 <a href="{{ item.slides | absolute_url  }}" target="_blank" rel="noopener noreferrer">slides</a>&nbsp;
                 </div>
                 <div class="col-sm-3">
@@ -33,7 +33,7 @@
                   {% endif %}
                 {% endif %}
                 </div>
-                <div class="col-sm-2">
+                <div class="col-sm-1.5">
                 {% if item.application %}
                   {% if item.application contains '.ipynb' %}
                     <a href="{{ item.application | absolute_url }}" target="_blank" rel="noopener noreferrer">application</a>&nbsp;
