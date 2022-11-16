@@ -8,7 +8,7 @@ nav_order: 5
 ---
 <article>
 
-{% assign sorted = site.data.teaching.lectures | sort: "year" %}
+{% assign sorted = site.data.teaching.lectures | sort: "year" | reverse%}
     {% for lecture in sorted %}
     {% include lecture.html lecture=lecture %}
 {% endfor %}
