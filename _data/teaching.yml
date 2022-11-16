@@ -1,0 +1,36 @@
+lectures:
+  - title: Reinforcement Learning
+    type: Main Lecturer
+    institution: University of Southern Denmark
+    department: IMADA
+    year: 2021
+    link: 
+    schedule:
+      - week: 1
+        topic: "Reinforcement Learning: What and Why?"
+        slides: "assets/teaching/rl_2021/rl-lecture1.pdf"
+        additional_materials: "assets/teaching/rl_2021/Lecture 1 - introduction.pdf"
+        application: 
+      - week: 2
+        topic: "Markov Decision Processes"
+        slides: "assets/teaching/rl_2021/rl-lecture2.pdf"
+        additional_materials: Sutton Ch 3
+        application: 
+  
+  - title: Reinforcement Learning
+    type: Main Lecturer
+    institution: University of Southern Denmark
+    department: IMADA
+    year: 2022
+    link: 
+    schedule:
+      - week: 1
+        topic: "Reinforcement Learning: What and Why?"
+        slides: "assets/teaching/rl_2021/rl-lecture1.pdf"
+        additional_materials: "assets/teaching/rl_2021/Lecture 1 - introduction.pdf"
+        application: 
+      - week: 2
+        topic: "Markov Decision Processes"
+        slides: "assets/teaching/rl_2021/rl-lecture2.pdf"
+        additional_materials: Sutton Ch 3
+        application: 
