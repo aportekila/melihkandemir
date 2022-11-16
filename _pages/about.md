@@ -2,12 +2,12 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: 
 
 profile:
   align: right
-  image: melih_kandemir.jpg
-  image_circular: true # crops the image to make it circular
+  image: melih_kandemir.png
+  image_circular: false # crops the image to make it circular
   address: >
     <p>555 Ø14-603B-1</p>
     <p>Department of Mathematics and Computer Science</p>
