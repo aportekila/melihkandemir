@@ -18,29 +18,24 @@
         {% for item in sorted %}
           <li class="list-group">
             <div class="row">
-              <div class="col-sm-7">
+              <div class="col-sm-5">
                 Week {{ item.week }}: {{ item.topic }}
               </div>
-              <div class="col-sm-1">
+              <div class="col-sm-7">
                 <a href="{{ item.slides | absolute_url  }}" target="_blank" rel="noopener noreferrer">slides</a>&nbsp;
-              </div>
-                {% if item.additional_reading %}
-                  <div class="col-sm-2">
-                    {% if item.additional_reading contains '.pdf' %}
-                      <a href="{{ item.additional_reading | absolute_url }}" target="_blank" rel="noopener noreferrer">additional reading</a>&nbsp;
-                    {% else %}
-                      additional reading: {{ item.additional_reading }}&nbsp;
-                    {% endif %}
-                  </div>
-                {% endif %}
                 {% if item.application %}
-                  <div class="col-sm-2">
-                    {% if item.application contains '.ipynb' %}
-                      <a href="{{ item.application | absolute_url }}" target="_blank" rel="noopener noreferrer">application</a>&nbsp;
-                    {% else %}
-                      application: {{ item.application }}&nbsp;
-                    {% endif %}
-                  </div>
+                  {% if item.application contains '.ipynb' %}
+                    <a href="{{ item.application | absolute_url }}" target="_blank" rel="noopener noreferrer">application</a>&nbsp;
+                  {% else %}
+                    application: {{ item.application }}&nbsp;
+                  {% endif %}
+                {% endif %}
+                {% if item.additional_reading %}
+                  {% if item.additional_reading contains '.pdf' %}
+                    <a href="{{ item.additional_reading | absolute_url }}" target="_blank" rel="noopener noreferrer">additional reading</a>&nbsp;
+                  {% else %}
+                    additional reading: {{ item.additional_reading }}&nbsp;
+                  {% endif %}
                 {% endif %}
                 
               </div>
@@ -56,5 +51,6 @@
       
     </div>
   </div>
-  
+
+  <p></p>
   <p></p>
