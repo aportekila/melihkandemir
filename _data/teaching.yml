@@ -16,7 +16,7 @@ lectures:
         slides: "assets/teaching/rl_2021/rl-lecture2.pdf"
         additional_reading: Sutton Ch 3        
       - week: 3
-        topic: "Markov Decision Processes"
+        topic: "The Bellman Equations"
         slides: "assets/teaching/rl_2021/rl-lecture3.pdf"
         additional_reading: Sutton Ch 4
         application: "assets/teaching/rl_2021/app1-cart-pole.ipynb"
