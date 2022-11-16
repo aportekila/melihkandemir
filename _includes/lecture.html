@@ -19,22 +19,23 @@
           <li class="list-group">
             <div class="row">
               <div class="col-sm-9">
+                {{item}}
                 Week {{ item.week }}: {{ item.topic }}
               </div>
               <div class="col-sm-3">
-                <a href="{{ item.slides | relative_url }}" target="_blank" rel="noopener noreferrer">slides</a>&nbsp;
+                <a href="{{ item.slides | relative_path }}" target="_blank" rel="noopener noreferrer">slides</a>&nbsp;
                 {% if item.additional_reading %}
                   {% if item.additional_reading contains '.pdf' %}
                     <a href="{{ item.additional_reading }}" target="_blank" rel="noopener noreferrer">additional reading</a>&nbsp;
                   {% else %}
-                    additional reading: {- item.additional_reading -}&nbsp;
+                    additional reading: {{ item.additional_reading }}&nbsp;
                   {% endif %}
                 {% endif %}
                 {% if item.application %}
                   {% if item.application contains '.ipynb' %}
                     <a href="{{ item.application }}" target="_blank" rel="noopener noreferrer">additional reading</a>&nbsp;
                   {% else %}
-                    application: {- item.application -}&nbsp;
+                    application: {{ item.application }}&nbsp;
                   {% endif %}
                 {% endif %}
                 
