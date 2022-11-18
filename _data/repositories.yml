@@ -1,12 +1,7 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - aportekila
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - aportekila/aportekila.github.io 
+  - aportekila/FeDQN-A-Federated-Learning-Approach-for-Training-Reinforcement-Learning-Agent-of-Atari-Games
+  - aportekila/EvidentialTuringProcess
